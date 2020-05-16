@@ -1,0 +1,55 @@
+﻿<Window x:Class="CalculadoraProfit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculadoraProfit"
+        mc:Ignorable="d"
+        Title="Profit Calculator" Height="270" Width="200"
+        Background="LightGray"
+        BorderThickness="2"
+        BorderBrush="DimGray"
+        Icon="/media/Crystal_coins.png"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <RadioButton Name="_radioManual" Content="Manual" HorizontalAlignment="Left" Margin="5,5,0,5" VerticalAlignment="Top" Grid.Row="0" IsChecked="True" Checked="RadioManual_Checked"/>
+        <RadioButton Name="_radioClipboard" Content="Clipboard" HorizontalAlignment="Left" Margin="75,5,0,5" VerticalAlignment="Top" Grid.Row="0" Checked="RadioClipboard_Checked"/>
+
+        <Image Name="_falconShield" Source="/media/Falcon_Escutcheon.gif" Stretch="Fill" Margin="5,8,0,0" Grid.Row="1" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTip="Knight"/>
+        <Image Name="_falconRod" Source="/media/Falcon_Rod.gif" Stretch="Fill" Margin="5,33,0,0" Grid.Row="1" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTip="Druid"/>
+        <Image Name="_falconBow" Source="/media/Falcon_Bow.gif" Stretch="Fill" Margin="5,58,0,0" Grid.Row="1" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTip="Paladin"/>
+        <Image Name="_falconWand" Source="/media/Falcon_Wand.gif" Stretch="Fill" Margin="5,83,0,5" Grid.Row="1" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTip="Sorcerer"/>
+        <Label Name="_player5" Margin="5,103,0,5" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Content="5º" FontSize="15"/>
+
+        <TextBox Name="_balanceEk" HorizontalAlignment="Left" Height="20" Margin="30,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.Row="1"/>
+        <TextBox Name="_balanceEd" HorizontalAlignment="Left" Height="20" Margin="30,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.Row="1"/>
+        <TextBox Name="_balanceRp" HorizontalAlignment="Left" Height="20" Margin="30,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.Row="1"/>
+        <TextBox Name="_balanceMs" HorizontalAlignment="Left" Height="20" Margin="30,83,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.Row="1"/>
+        <TextBox Name="_balance5" HorizontalAlignment="Left" Height="20" Margin="30,108,0,5" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Grid.Row="1"/>
+
+        <Label Name="_resultEk" HorizontalAlignment="Left" Margin="90,3,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Name="_resultEd" HorizontalAlignment="Left" Margin="90,29,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Name="_resultRp" HorizontalAlignment="Left" Margin="90,53,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Name="_resultMs" HorizontalAlignment="Left" Margin="90,79,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Name="_result5" HorizontalAlignment="Left" Margin="90,105,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
+
+        <Label Name="_labelProfitPerPlayer" Content="Profit per Player:" HorizontalAlignment="Left" Margin="0,130,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Name="_profitPerPlayer" HorizontalAlignment="Left" Margin="95,130,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Bold"/>
+
+        <TextBox Name="_clipboard" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Height="150" Width="170" Visibility="Hidden"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Name="_scrollViewerClipboard" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="170" Visibility="Hidden">
+            <TextBlock Name="_clipboardResult" TextWrapping="Wrap"/>
+        </ScrollViewer>
+
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Height="30" Cursor="Hand" Foreground="Red" FontWeight="Bold" Click="Clear_Click"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="95,5,0,0" VerticalAlignment="Top" Width="75" Grid.Row="2" Height="30" Cursor="Hand" Foreground="LimeGreen" FontWeight="Bold" Click="Calculate_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\bin\Debug\CalculadoraProfit.exe.config
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\bin\Debug\CalculadoraProfit.exe
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\bin\Debug\CalculadoraProfit.pdb
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.csprojAssemblyReference.cache
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\MainWindow.g.cs
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\App.g.cs
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit_MarkupCompile.cache
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit_MarkupCompile.lref
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\MainWindow.baml
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.g.resources
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.Properties.Resources.resources
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.csproj.GenerateResource.cache
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.exe
+C:\Users\Ricardo\source\repos\CalculadoraProfit\CalculadoraProfit\obj\Debug\CalculadoraProfit.pdb
